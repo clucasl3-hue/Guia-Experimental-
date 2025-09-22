@@ -15,4 +15,3 @@ if (usuarios >= 100){
 }
 console.log (`Costo total: $${costoT}`);
 console.log (`Costo por usuario: $${costoU}`);
-k
