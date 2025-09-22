@@ -4,11 +4,12 @@ for (let i = 1; i <= N; i++) {
     let edad2 = parseInt(prompt(`Grupo ${i}: Ingrese la edad del segundo hermano`));
     let edad3 = parseInt(prompt(`Grupo ${i}: Ingrese la edad del tercer hermano`));
     let mayor = edad1;
-    if (edad2 > mayor) {
-        mayor = edad2;
-    } 
-    if (edad3 > mayor) {
-        mayor = edad3;
-    }
+if (edad1 >= edad2 && edad1 >= edad3) {
+    mayor = edad1;
+} else if (edad2 >= edad1 && edad2 >= edad3) {
+    mayor = edad2;
+} else {
+    mayor = edad3;
+}
     console.log(`Grupo ${i}: El hermano mayor tiene ${mayor} años`);
 }
