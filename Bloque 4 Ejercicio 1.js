@@ -13,5 +13,4 @@ if (usuarios >= 100){
   costoT=300;
   costoU=costoT/usuarios;
 }
-console.log (`Costo total: $${costoT}`);
-console.log (`Costo por usuario: $${costoU}`);
+alert(` Costo total: $${costoT}, Costo por usuario: $${costoU}`);
